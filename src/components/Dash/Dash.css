@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.tabela {
+    width: 60%;
+    margin: 0 350px;
+    border-spacing: 50px;
+
+
+}
+
+.tabela td {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
