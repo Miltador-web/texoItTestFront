@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../components/Cards/Card1.css';
+import '../components/Cards/Cards.css';
 function MoviesList() {
     const [movies, setMovies] = useState([]);
     const [page, setPage] = useState(1);
@@ -85,7 +85,7 @@ function MoviesList() {
     };
 
     return (
-        <div>
+        <div className='list'>
             <div>
             </div>
             <div>
@@ -93,6 +93,7 @@ function MoviesList() {
 
             <table>
                 <thead>
+                    <h3>List movies</h3>
                     <tr>
                         <th>ID</th>
                         <th>

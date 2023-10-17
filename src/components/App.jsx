@@ -1,13 +1,32 @@
-import React from "react";
-import './App.css'
-import Dash from "./Dash/Dash";
-import Sidebar from "./Sidebar/Sidebar";
-import Header from "./Header/Header";
-import List from "./List";
+// src/App.js
+import React, { useState } from 'react';
+import Dash from './Dash/Dash';
+import List from './List'
+import './Sidebar/Sidebar.css';
 
-export default () =>
-<div>
-    <Header></Header>
-    <Sidebar></Sidebar>
-    <Dash></Dash>
-</div>
+function App() {
+    const [currentPage, setCurrentPage] = useState('home');
+
+    return (
+        <div className="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" onClick={() => setCurrentPage('home')}>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={() => setCurrentPage('about')}>
+                            List
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            {currentPage === 'home' ? <Dash /> : <List />}
+        </div>
+    );
+}
+
+export default App;

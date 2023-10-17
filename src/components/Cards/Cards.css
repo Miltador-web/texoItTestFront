@@ -39,7 +39,7 @@ input{
 
 .pagination{
     width: 500px;
-    margin: 20px auto;
+    margin-left: 200px;
 }
 
 
@@ -58,4 +58,13 @@ input{
 
 select{
     border-radius: 5px;
+}
+
+.list{
+    width: 100%;
+    margin: 0 200%;
+}
+
+.list table{
+    width: 900%
 }

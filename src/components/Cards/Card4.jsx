@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Card1.css';
+import './Cards.css';
 
 export default props => {
     const [year, setYear] = useState(''); // Inicialize com uma string vazia
